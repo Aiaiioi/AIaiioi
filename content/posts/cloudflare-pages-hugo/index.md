@@ -1,14 +1,26 @@
 ---
-# 文章标题
-title: "Cloudflare Pages 部署 HUGO 博客"
-# 文章副标题
+########## 文章标题
+title: "使用 Cloudflare Pages 免费部署 HUGO 博客"
+########## 文章副标题
 subtitle: ""
+########## 页面图片, 用于 Open Graph 和 Twitter Cards
+images: []
+########## 用在主页预览的文章特色图片
+featuredImagePreview: ""
+################# 特色照片
+featuredImage: "../cloudflare-pages-hugo/img/logo.png"
+########## 标签
+tags: [Hugo,博客,Cloudflare Pages,Cloudflare]
+########## 分类
+categories: [挖站]
+
 # 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 date 字段获取的, 但是也可以在 网站配置 中设置
-date: 2023-01-11T20:33:12+08:00
+date: 2023-01-12T05:18:52+08:00
 # 上次修改内容的日期时间
-lastmod: 2023-01-11T20:33:12+08:00
+lastmod: 2023-01-12T05:18:52+08:00
 # 如果设为 true, 除非 hugo 命令使用了 --buildDrafts/-D 参数, 这篇文章不会被渲染
-#draft: true
+draft: false
+# 文章作者
 author: ""
 # 文章作者的链接
 authorLink: ""
@@ -16,16 +28,6 @@ authorLink: ""
 description: ""
 # 这篇文章特殊的许可
 license: ""
-# 页面图片, 用于 Open Graph 和 Twitter Cards
-images: []
-# 标签
-tags: []
-# 分类
-categories: []
-# 特色照片
-featuredImage: ""
-# 用在主页预览的文章特色图片
-featuredImagePreview: ""
 # 是否在主页隐藏一篇文章
 hiddenFromHomePage: false
 # 是否在搜索结果中隐藏一篇文章
@@ -78,10 +80,6 @@ seo:
   # ...
 ---
 
-<!--more-->
-
-# Cloudflare Pages 部署 HUGO 博客
-
 ## 1. 建立HUGO本地站点
 
 本地部署好Hugo站点后，新建一个Github库，公开或私人库都可以。然后将本地Hugo博客pull到Github库里。
@@ -90,8 +88,9 @@ seo:
 
 **2-1.**  登录[https://dash.cloudflare.com/](https://dash.cloudflare.com/)，打开[Cloudflare Pages](https://pages.cloudflare.com/)，点击 **创建项目**
 
-<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-12-38-image.png" alt="" width="798">
+<!--more-->
 
+<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-12-38-image.png" alt="" width="798">
 ---
 
 **2-2.** 然后链接下Github账户
@@ -143,13 +142,13 @@ seo:
 ```toml
 02:13:38.081    Cloning repository...
 02:13:39.110    From https://github.com/Aiaiioi/hugo-blog
-02:13:39.111     * branch            62f608b75a2019868ec225e2b5ce7fad082cb23e262e -> FETCH_HEAD
+02:13:39.111     * branch            62f608b75a201928268ec3225e2b5ce7fad082cb23e262e -> FETCH_HEAD
 02:13:39.111    
 02:13:39.173    HEAD is now at 62f608b my blog
 02:13:39.174    
 02:13:48.464    Submodule 'themes/LoveIt' (https://github.com/dillonzq/LoveIt.git) registered for path 'themes/LoveIt'
 02:13:48.464    Cloning into '/opt/buildhome/clone/themes/LoveIt'...
-02:13:48.465    Submodule path 'themes/LoveIt': checked out 'e9e89a4613b3aee8235968222b7d246f5931263491'
+02:13:48.465    Submodule path 'themes/LoveIt': checked out 'e9e89a4613b3aee82359682223b7d246f59321263491'
 02:13:48.465    
 02:13:48.508    Success: Finished cloning repository files
 02:13:49.388    Installing dependencies
@@ -164,7 +163,7 @@ seo:
 02:14:00.625    5.2 is already installed.
 02:14:00.663    Using Swift version 5.2
 02:14:00.663    Installing Hugo 0.109.0
-02:14:01.799    hugo v0.109.0-47b12b83e6362242e5e601813ff3e6790c2191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=gohugoio
+02:14:01.799    hugo v0.109.0-47b3312b83e6362242e5e1601813ff3e6790c2191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=gohugoio
 02:14:01.804    Started restoring cached go cache
 02:14:01.825    Finished restoring cached go cache
 02:14:01.992    go version go1.14.4 linux/amd64
@@ -173,7 +172,7 @@ seo:
 02:14:02.014    Verify run directory
 02:14:02.014    Executing user command: hugo
 02:14:02.129    Start building sites … 
-02:14:02.130    hugo v0.109.0-47b12b83e6362242e5e601813ff3e6790c2191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=gohugoio
+02:14:02.130    hugo v0.109.0-47b3312b83e6362242e5e1601813ff3e6790c2191e371+extended linux/amd64 BuildDate=2022-12-23T10:38:11Z VendorInfo=gohugoio
 02:14:02.391    
 02:14:02.391                       | ZH-CN  
 02:14:02.391    -------------------+--------
@@ -209,3 +208,7 @@ seo:
 ---
 
 **官方参考资料：**[Deploy a Hugo site · Cloudflare Pages docs](https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/)
+
+
+
+错别字错别字。。- -！！！

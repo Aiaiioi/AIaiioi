@@ -1,26 +1,14 @@
 ---
-########## 文章标题
-title: "{{ replace .TranslationBaseName "-" " " | title }}"
-########## 文章副标题
+# 文章标题
+title: "Aiaiioi"
+# 文章副标题
 subtitle: ""
-########## 页面图片, 用于 Open Graph 和 Twitter Cards
-images: []
-########## 用在主页预览的文章特色图片
-featuredImagePreview: ""
-################# 特色照片
-featuredImage: ""
-########## 标签
-tags: []
-########## 分类
-categories: []
-
 # 这篇文章创建的日期时间. 它通常是从文章的前置参数中的 date 字段获取的, 但是也可以在 网站配置 中设置
-date: {{ .Date }}
+date: 2023-01-12T04:21:09+08:00
 # 上次修改内容的日期时间
-lastmod: {{ .Date }}
+lastmod: 2023-01-12T04:21:09+08:00
 # 如果设为 true, 除非 hugo 命令使用了 --buildDrafts/-D 参数, 这篇文章不会被渲染
-draft: false
-# 文章作者
+#draft: true
 author: ""
 # 文章作者的链接
 authorLink: ""
@@ -28,6 +16,16 @@ authorLink: ""
 description: ""
 # 这篇文章特殊的许可
 license: ""
+# 页面图片, 用于 Open Graph 和 Twitter Cards
+images: []
+# 标签
+tags: []
+# 分类
+categories: []
+# 特色照片
+featuredImage: ""
+# 用在主页预览的文章特色图片
+featuredImagePreview: ""
 # 是否在主页隐藏一篇文章
 hiddenFromHomePage: false
 # 是否在搜索结果中隐藏一篇文章
@@ -81,3 +79,5 @@ seo:
 ---
 
 <!--more-->
+
+Aiaiioi
