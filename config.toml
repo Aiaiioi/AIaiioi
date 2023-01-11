@@ -60,6 +60,20 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [menu]
   [[menu.main]]
     weight = 1
+    identifier = "hume"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "首页"
+    url = "/"
+    # title will be shown when you hover on this menu link
+    # 当您将鼠标悬停在此菜单链接上时, 将显示标题
+    title = ""
+  [[menu.main]]
+    weight = 2
     identifier = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
@@ -73,7 +87,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     # 当您将鼠标悬停在此菜单链接上时, 将显示标题
     title = ""
   [[menu.main]]
-    weight = 2
+    weight = 3
     identifier = "tags"
     pre = ""
     post = ""
@@ -81,7 +95,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/tags/"
     title = ""
   [[menu.main]]
-    weight = 3
+    weight = 4
     identifier = "categories"
     pre = ""
     post = ""
@@ -89,7 +103,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/categories/"
     title = ""
 #  [[menu.main]]
-#    weight = 4
+#    weight = 5
 #    identifier = "documentation"
 #    pre = ""
 #    post = ""
@@ -97,21 +111,21 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 #    url = "/documentation/"
 #    title = ""    
   [[menu.main]]
-    weight = 5
+    weight = 6
     identifier = "about"
     pre = ""
     post = ""
     name = "关于"
     url = "/about/"
     title = ""    
-  [[menu.main]]
-    weight = 6
-    identifier = "github"
-    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
-    post = ""
-    name = "Github"
-    url = "https://github.com/dillonzq/LoveIt"
-    title = "GitHub"          
+#  [[menu.main]]
+#    weight = 7
+#    identifier = "github"
+#    pre = "<i class='fab fa-github fa-fw' aria-hidden='true'></i>"
+#    post = ""
+#    name = "Github"
+#    url = "https://github.com/Aiaiioi/giscus"
+#    title = "GitHub"          
 
 [params]
   # site default theme ["auto", "light", "dark"]
@@ -181,7 +195,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
       #gravatarEmail = "aiaiioi@126.com"
       # URL of avatar shown in home page
       # 主页显示头像的 URL
-      avatarURL = "https://github.com/Aiaiioi/blog/raw/main/images/ima_t.png"
+      avatarURL = "https://github.com/Aiaiioi/giscus/blob/main/images/ima_t.png?raw=true"
       # title shown in home page (HTML format is supported)
       # 主页显示的网站标题 (支持 HTML 格式)
       title = ""
@@ -595,7 +609,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         # You can refer to the official documentation of giscus to use the following configuration.
         # 你可以参考官方文档来使用下列配置
         enable = true
-        repo = "Aiaiioi/blog"
+        repo = "Aiaiioi/giscus"
         repoId = "R_kgDOIwKcLA"
         category = "Announcements"
         categoryId = ""
@@ -605,7 +619,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
         mapping = "pathname"
         reactionsEnabled = "1"
         emitMetadata = "0"
-        inputPosition = "bottom"
+        inputPosition = "top"
         lazyLoading = false
         lightTheme = "light"
         darkTheme = "dark"
