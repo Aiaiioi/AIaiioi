@@ -8,7 +8,7 @@ images: []
 ########## 用在主页预览的文章特色图片
 featuredImagePreview: ""
 ################# 特色照片
-featuredImage: "../cloudflare-pages-hugo/img/logo.png"
+featuredImage: "../cloudflare-pages-hugo/img/logo.webp"
 ########## 标签
 tags: [Hugo,博客,Cloudflare Pages,Cloudflare]
 ########## 分类
@@ -79,7 +79,7 @@ seo:
   images: []
   # ...
 ---
-
+<!--more-->
 ## 1. 建立HUGO本地站点
 
 本地部署好Hugo站点后，新建一个Github库，公开或私人库都可以。然后将本地Hugo博客pull到Github库里。
@@ -88,20 +88,20 @@ seo:
 
 **2-1.**  登录[https://dash.cloudflare.com/](https://dash.cloudflare.com/)，打开[Cloudflare Pages](https://pages.cloudflare.com/)，点击 **创建项目**
 
-<!--more-->
 
-<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-12-38-image.png" alt="" width="798">
+
+<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-12-38-image.webp" alt="" width="798">
 ---
 
 **2-2.** 然后链接下Github账户
 
-<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-13-25-image.png" alt="" width="798">
+<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-13-25-image.webp" alt="" width="798">
 
 ---
 
 **2-3.** 链接后选择刚才推送Github的库，再点击 **开始设置**
 
-<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-14-19-image.png" alt="" width="798">
+<img title="" src="../cloudflare-pages-hugo/img/2023-01-12-01-14-19-image.webp" alt="" width="798">
 
 ---
 
@@ -117,7 +117,7 @@ seo:
 
 最后点击 **保存并部署** 。
 
-<img src="../cloudflare-pages-hugo/img/2023-01-12-01-50-50-image.png" title="" alt="" width="798">
+<img src="../cloudflare-pages-hugo/img/2023-01-12-01-50-50-image.webp" title="" alt="" width="798">
 
 {{< admonition warning >}}
 
@@ -135,7 +135,7 @@ seo:
 
 **2-5.**  稍等一下就可以查看部署结果了，如果成功的话就可以直接用刚才设置的二级域名访问博客了，下一步就是开始绑定自己的域名。
 
-<img src="../cloudflare-pages-hugo/img/2023-01-12-02-39-12-image.png" title="" alt="" width="798">
+<img src="../cloudflare-pages-hugo/img/2023-01-12-02-39-12-image.webp" title="" alt="" width="798">
 
 以下是我的第一次部署日志：
 
